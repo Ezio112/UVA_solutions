@@ -9,7 +9,7 @@ public class Main{
 		int counter=1;
 		while(true){
 			int n=Integer.parseInt(br.readLine());
-			if(n==-1)	break;
+			if(n<0)	break;
 			
 			int operation=0,num=1;
 			while(num<n){
