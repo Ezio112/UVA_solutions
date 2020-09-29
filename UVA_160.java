@@ -29,8 +29,12 @@ public class Main{
 			int n=sc.nextInt(),counter=0;
 			if(n==0)	break;
 			
-			System.out.print(n+"! =");
+			System.out.printf("%3d! =",n);
+			int count=0;
 			for(int i=0;i<len;++i) if(dp[n][i]!=0){
+				if(count!=0  &&count%15==0)
+					System.out.print("\n      ");
+				++count;
 				System.out.printf("%3d",dp[n][i]);
 			}
 			System.out.println();
